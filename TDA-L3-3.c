@@ -6,6 +6,7 @@ Implemente a função strcat de string.h utilizando qualquer estrutura de repeti
 A função strcat concatena o conteúdo de uma string em outra. DICA: Cuidado com o espaço em memória.
 */
 
+
 int main()
 {
   char s1[] = " ";
