@@ -30,11 +30,6 @@ int main()
   }
   if (strcasecmp(palavra1, palavra2) != 0) printf("\nA palavra %s nao e um palindromo!\n", palavra);
   else printf("\nA palavra %s e um palindromo!\n", palavra);
-  //int resultado = (strcmp(palavra1, palavra2));
-  //printf("%d\n", resultado);
-  //puts(palavra);
-  //puts(palavra1);
-  //puts(palavra2);
 
   return 0;
 }
