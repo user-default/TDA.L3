@@ -1,24 +1,21 @@
 #include <stdio.h>
-#include <string.h>
 
 /*
 Implemente a função strlen de string.h utilizando qualquer estrutura de repetição. 
 A função strlen retorna a quantidade de caracteres em uma string. DICA: A string termina com o caractere especial '\0'.
 */
 
-int main()
+int main() 
 {
-  int i = -1;
-  char s0[] = "";
-  puts("Digite uma palavra ou 0 para terminar:\n");
-  while(i != 0)
+  char s1[100];
+  int j = 1, count = -1;
+  scanf(" %[^\n]s", s1);
+  getchar();
+  for (int i = 0; j != '\0'; i++)
   {
-    scanf("%d", &i);
-    if(i == 0) break;
-    scanf("%s", s0);
-    printf("A string possui %ld caracteres!\n", strlen(s0));
-    puts("Digite outra palavra ou 0 para terminar:\n");
+    j = s1[i];
+    count++;
   }
-  puts("Fim de execucao!\n");
+  printf("Quantidade de elementos = %d\n", count);
   return 0;
 }
