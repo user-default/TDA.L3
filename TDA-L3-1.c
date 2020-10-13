@@ -1,23 +1,20 @@
 #include <stdio.h>
 #include <string.h>
 
-/*Implemente a função strcpy de string.h utilizando qualquer estrutura de repetição. 
+/* Implemente a função strcpy de string.h utilizando qualquer estrutura de repetição.
 A função strcpy copia o conteúdo de uma string para outra. DICA: Cuidado com o espaço em memória.
 */
 
-int main()
+int main() 
 {
-  char s0[] = "Boa noite!\n";
-  char s1[12];
-  int i = 1;
-  while((i > 0) && (i == 1))
+  char str1[15];
+  char str2[15];
+  printf("Enter your name:\n");
+  scanf(" %[^\n]s", str1);
+  for(int i = 0; i <= strlen(str1); i++)
   {
-    printf("Digite 0 para encerrar ou 1 para continuar:\n");
-    scanf("%d", &i);
-    strcpy(s1, s0);
-    printf("s1[] == %s", s1);
-
+    str2[i] = str1[i];
   }
-  puts("Programa encerrado!\n");
+  puts(str2);
   return 0;
 }
